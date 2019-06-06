@@ -91,7 +91,7 @@ public class FileServiceImpl implements IFileService {
 
         try {
             file.transferTo(targetFile);
-            //文件已经上传tomcat成功了
+            //文件已经上传成功了
 
 
             FTPUtil.uploadFile(Lists.newArrayList(targetFile));
@@ -108,5 +108,3 @@ public class FileServiceImpl implements IFileService {
     }
 
 }
-
-
