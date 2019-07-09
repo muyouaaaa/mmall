@@ -531,7 +531,7 @@ public class OrderServiceImpl implements IOrderService {
     }
 
     public ServerResponse aliCallback(Map<String, String> params) {
-        Long orderNo = Long.parseLong(params.get("order_trade_no"));
+        Long orderNo = Long.parseLong(params.get("out_trade_no"));
         String tradeNo = params.get("trade_no");
         String tradeStatus = params.get("trade_status");
         Order order = orderMapper.selectByOrderNo(orderNo);
